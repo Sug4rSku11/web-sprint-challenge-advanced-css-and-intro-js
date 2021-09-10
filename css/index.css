@@ -135,6 +135,8 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+
 /* Media Query for mobile device */
 @media (max-width: 500px){
  
@@ -198,25 +200,24 @@ nav span{
         margin: auto;
         margin-bottom: 10%;
     }
+
 .artist {
     width: 70%;
-    
-    
 }
+
 .artist img {
     width: 60%;
     margin: 5% 20%;
 }
+
 .artist a {
     font-size: 1.4rem;
     text-align: center;
 }
- .bio {
+
+.bio {
      font-size: 1.1rem;
      text-align: center;
- }  
-
-  
-   
+ }   
 
 }
