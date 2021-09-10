@@ -246,7 +246,7 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
 function get20s() {
-  
+
 }
 
 
