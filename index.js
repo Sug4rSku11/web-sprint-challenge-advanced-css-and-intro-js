@@ -260,8 +260,9 @@ Use removeArtist to do the following:
 
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist() {
-  
+function removeArtist(array, value) {
+  artists.splice(value, 1);
+  return artists.length;
 }
 
 
@@ -282,8 +283,15 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(array, id, name, years,genre, nationality, bio, wikipedia, paintings) {
-  artists.push({id, name, years, genre, nationality, bio, wikipedia, paintings})
+function addArtist() {
+  const myInfo = {"id": 20,
+                  "name": "Desiree Garcia",
+                  'years': 1985-2021,
+                  'genre': 'Web Design',
+                  'nationality': 'United States',
+                  'bio': 'lorem  ipsem'};
+  artists.push.apply(artists, myInfo);
+  
   return artists;
 }
 
@@ -296,7 +304,7 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(array) {
+function lotsOfArt() {
   const manyPaintings = [];
   for(let i = 0; i < artists.length; i++){
     if(artists[i].paintings >= 100){
