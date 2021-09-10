@@ -217,8 +217,8 @@ console.log(artists[2]["bio"]);
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Fix this issue and console.log() to check your work. */
-// artists[9].name = "Vincent Van Dough";
-// console.log(artists[9]);
+artists[9].name = "Vincent Van Gogh";
+console.log(artists[8]);
 
 
 
@@ -245,8 +245,8 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-function get20s(/*Your Code Here*/) {
-  /*Your Code Here*/
+function get20s() {
+  
 }
 
 
@@ -284,13 +284,13 @@ Use addArtist to do the following:
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
 function addArtist() {
-  const myInfo = {"id": 20,
-                  "name": "Desiree Garcia",
-                  'years': 1985-2021,
-                  'genre': 'Web Design',
-                  'nationality': 'United States',
-                  'bio': 'lorem  ipsem'};
-  artists.push.apply(artists, myInfo);
+  const myInfo = {id: 20,
+                  name: "Desiree Garcia",
+                  years: 1985-2021,
+                  genre: 'Web Design',
+                  nationality: 'American',
+                  bio: 'lorem  ipsem'};
+  artists.push(myInfo);
   
   return artists;
 }
@@ -304,11 +304,11 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt() {
+function lotsOfArt(array, name) {
   const manyPaintings = [];
   for(let i = 0; i < artists.length; i++){
-    if(artists[i].paintings >= 100){
-      manyPaintings.push(artists[i].name);
+    if(array[i].paintings > 100){
+      manyPaintings.push(array[i].name);
     }
   }
   return manyPaintings;
